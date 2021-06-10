@@ -1,0 +1,28 @@
+body.dark-mode{
+    background-color: $body-color-dark;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    gap: 4em;
+    flex-wrap: nowrap;
+    height: 75vh;
+    justify-content: space-between;
+    padding: 5%;
+    overflow-x: auto; 
+    position: relative;
+    top: 15vh;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+}
+
+svg { width: 1.5em;}

@@ -1,0 +1,66 @@
+#menu-item-modal{
+    // background-color: hsl(0, 0%, 100%);
+    height: max-content;
+    justify-content: space-between;
+    left: 35%;
+    padding: 2em 1em;
+    position: fixed;
+    top: -100vh;
+    transition: top 0.3s;
+    width: 30%;
+    z-index: 3000;
+
+    @include glassmorphism(hsl(0, 0%, 100%, 0.15), 15px);
+}
+
+#menu-item-modal.modal-active{
+    top: 20vh;
+    transition: top 0.3s;
+}
+
+.custom-select-modal {
+    cursor: pointer;
+    background-color: red;
+    option {
+        background-color: $panel-color-dark !important;
+    }
+}
+
+.modal-menu-item-store-button{
+
+    cursor: pointer;
+    float: right;
+    padding-top: 1em;
+    width: max-content;
+
+    &:hover{
+
+        .store-button-icon{
+            fill: $interaction-color;
+        }
+    }
+
+    svg{
+        float: right;
+        height: 2.4em;
+        width: 2.4em; 
+        
+        .store-button-icon{
+            fill: $text-color-dark-secondary;
+        } 
+    }
+}
+
+.modal-menu-item-delete-button{
+
+    bottom: 1em;
+    cursor: pointer;
+    position: absolute;
+    width: max-content;
+
+    p{
+        color: hsl(0, 100%, 50%);
+        text-decoration: underline;
+    }
+}
+
